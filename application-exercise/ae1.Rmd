@@ -1,28 +1,20 @@
 ---
-title: "AE 1"
+title: "Introduction to R"
 author: "YOUR Name"
-date: "`r Sys.Date()`"
-output: openintro::lab_report
+output: html_document
 ---
-
-```{r load-packages, include=FALSE}
-library(tidyverse)
-library(openintro)
-```
 
 
 ### Instructions
 + This homework is due on Monday July 11 by 1:10 pm. No late work is accepted unless prior arrangements have been made with the instructor.
 + Please answer ALL questions (including those that do not involve R) in the locations marked in this template. Remember to periodically **knit** your document to check that the output appears as you want it to; you will be turning in your knit html document. 
-+ You will need to upload this document in CANVAS. Please be sure to check that your file was uploaded correctly. It does not hurt to screenshot verification of the upload as CANVAS can be glitchy on occasion.
++ You will need to upload this document in CANVAS. Take a look at the material from Week 1: Hello World for instructions on exporting your files from JupyterHub and into CANVAS.
 +  Please answer the questions in the order in which they are posed. Write in complete sentences, and support your answers where asked. 
 
 
-### Exercise 1: Practice with R
-
 **These questions are from Introduction to Data Science by Rafael Irizarry**
 
-a.  The formula for the sum of the squares of the first $n$ natural numbers is $$\frac{n  (n+1) (2n +1)}{6}.$$ 
+1.  The formula for the sum of the squares of the first $n$ natural numbers is $$\frac{n  (n+1) (2n +1)}{6}.$$ 
 Use this to calculate the sum of the squares of the first 100 natural numbers by filling in the partial code given below.  (Don't forget to remove the comment hash `#` so the code is actually evaluated.)
 
 ```{r part_a, echo=T, eval=T}
@@ -32,9 +24,9 @@ Use this to calculate the sum of the squares of the first 100 natural numbers by
 
 ```
 
-b. Now use the same formula to calculate the sum of the first 1,000 positive integers. Create a code chunk, give it a name, set `echo=T` and `eval=T` and then type your code and run it.
+2. Now use the same formula to calculate the sum of the first 1,000 positive integers. Create a code chunk, give it a name, set `echo=T` and `eval=T` and then type your code and run it.
 
-c. Suppose a high school student asks for help solving a quadratic equation of the form $$ ax^2 + bx +c = 0. $$ The quadratic equation formula gives the solutions as 
+3. Suppose a high school student asks for help solving a quadratic equation of the form $$ ax^2 + bx +c = 0. $$ The quadratic equation formula gives the solutions as 
 
 $$ \frac{1}{2a} (-b - \sqrt{ b^2 - 4 ac} ),\: \frac{1}{2a} (-b + \sqrt{ b^2 - 4 ac} ).$$ 
 
@@ -51,7 +43,7 @@ $$ \frac{1}{2a} (-b - \sqrt{ b^2 - 4 ac} ),\: \frac{1}{2a} (-b + \sqrt{ b^2 - 4 
 ```
 
 
-d. In math and programming, we say that we evaluate a function when we replace an argument with a given number. So if we type `sqrt(4)`, we are evaluating the square root function in R.  Use one line of code to compute the log, in base 10, of the square root of 125. (*Hint* use the help `?log` in the console window to get started.)
+4. In math and programming, we say that we evaluate a function when we replace an argument with a given number. So if we type `sqrt(4)`, we are evaluating the square root function in R.  Use one line of code to compute the log, in base 10, of the square root of 125. (*Hint* use the help `?log` in the console window to get started.)
 
 ```{r part_d, echo=T, eval=T}
 
