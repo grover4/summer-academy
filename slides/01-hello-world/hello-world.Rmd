@@ -282,7 +282,7 @@ Upload your files (both the `.Rmd` and `.html`) from your computer to the associ
 
 
 To quit RStudio, type `q()` in the console window or click `r knitr::include_graphics("img/stop.PNG")`
- on the top right. Then close the tab on your browserand you are done!
+ on the top right. Then close the tab on your browser and you are done!
 
 ### Help! I'm stuck! 
 
