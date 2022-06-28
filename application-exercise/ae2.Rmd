@@ -1,0 +1,78 @@
+---
+title: "Visualizing Starwars Characters"
+author: "YOUR Name"
+output: html_document
+---
+
+### Instructions
++ This homework is due on Monday July 18 by 1:10 pm. No late work is accepted unless prior arrangements have been made with the instructor.
++ Please answer ALL questions (including those that do not involve R) in the locations marked in this template. Remember to periodically **knit** your document to check that the output appears as you want it to; you will be turning in your knit html document. 
++ You will need to upload this document in CANVAS. Take a look at the material from Week 1: Hello World for instructions on exporting your files from JupyterHub and into CANVAS. 
++  Please answer the questions in the order in which they are posed. Write in complete sentences, and support your answers where asked. 
+
+
+
+For this homework, we will practice making different visualizations for the `starwars` data set from the **openintro** package. Let's load the packages we need. 
+
+
+```{r load-packages, include=FALSE}
+library(ggplot2)    #for making graphs
+library(openintro)  #for the data
+```
+
+Take a look at the `starwars` dataset like we did in class by typing `data(starwars)` at the prompt in the Console pane. 
+
+Then answer the questions below.
+
+1. How many observations are in this dataframe? Who/what is the individual? (That is, who/what is the data being collected on?)
+
+2. How many variables are in this data? Write three variable names (your choice).
+
+3. Modify the following plot to change the color of all points to `"pink"`.
+
+```{r scatterplot}
+ggplot(starwars, 
+       aes(x = height, y = mass)) + 
+  geom_point()
+```
+
+3.  Add labels for title, x and y axes, and size of points. Uncomment to see the effect.
+
+```{r scatterplot-labels}
+ggplot(starwars, 
+       aes(x = height, y = mass)) +
+  geom_point() +
+  labs(
+    #title = "___",
+    #x = "___", 
+    #y = "___",
+    )
+```
+
+4.  Pick a single numerical variable and make a histogram of it. Select a reasonable binwidth for it.
+
+(A little bit of starter code is provided below, and the code chunk is set to not be evaluated with `eval: false` because the current code in there is not valid code and hence the document wouldn't knit. Once you replace the code with valid code, set the chunk option to `eval= TRUE`, or remove the `eval` option altogether since it's set to `true` by default.)
+
+```{r histogram, eval = FALSE}
+ggplot(starwars, aes(___)) +
+  geom___
+```
+
+5.  Pick a numerical variable and a categorical variable and make a visualization (you pick the type!) to visualization the relationship between the two variables. 
+
+```{r num-cat}
+#| label: num-cat
+```
+
+
+6.  Pick a single categorical variable from the data set and make a bar plot of its distribution.
+
+```{r barplot}
+#| label: barplot
+```
+
+7.  Pick two categorical variables and make a visualization to visualize the relationship between the two variables. Along with your code and output, provide an interpretation of the visualization.
+
+```{r cat-cat}
+#| label: cat-cat
+```
