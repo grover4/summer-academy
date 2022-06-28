@@ -1,5 +1,5 @@
 ---
-title: "Visualizing data"
+title: "Visualizing data 2"
 subtitle: "UW MATHSUB 2022"
 author: "Slide credit: [Data Science in a Box](https://datasciencebox.org/)"
 output:
