@@ -1,6 +1,6 @@
 ---
 title: "Hello World!"
-subtitle: "Meet the toolkit"
+subtitle: "Meet the toolkit!"
 output:
   html_document:
     css: ../lab.css
