@@ -17,7 +17,7 @@ output: html_document
 1.  The formula for the sum of the squares of the first $n$ natural numbers is $$\frac{n  (n+1) (2n +1)}{6}.$$ 
 Use this to calculate the sum of the squares of the first 100 natural numbers by filling in the partial code given below.  (Don't forget to remove the comment hash `#` so the code is actually evaluated.)
 
-```{r part_a, echo=T, eval=T}
+```{r problem1, echo=T, eval=T}
 
 #n<-
 #sum_sq_100<-
@@ -33,7 +33,7 @@ $$ \frac{1}{2a} (-b - \sqrt{ b^2 - 4 ac} ),\: \frac{1}{2a} (-b + \sqrt{ b^2 - 4 
 
   Calculate the solutions for the equation $x^2 + x -1 = 0$ by filling in the partial code given below.  (Don't forget to remove the comment hash `#` so the code is actually evaluated.)
 
-```{r part_c, echo=T,eval=T}
+```{r problem3, echo=T,eval=T}
 
 #a <- 
 #b <- 
@@ -45,16 +45,7 @@ $$ \frac{1}{2a} (-b - \sqrt{ b^2 - 4 ac} ),\: \frac{1}{2a} (-b + \sqrt{ b^2 - 4 
 
 4. In math and programming, we say that we evaluate a function when we replace an argument with a given number. So if we type `sqrt(4)`, we are evaluating the square root function in R.  Use one line of code to compute the log, in base 10, of the square root of 125. (*Hint* use the help `?log` in the console window to get started.)
 
-```{r part_d, echo=T, eval=T}
+```{r problem4, echo=T, eval=T}
 
 
 ```
-
-Insert any text here.
-
-```{r code-chunk-label}
-# Insert code for Exercise 1 here
-```
-
-...
-
