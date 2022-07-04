@@ -1,3 +1,2 @@
 # summer-academy
-this is a line from RStudio
-line added from Github
+This repo contains student-facing materials for UW MSUB 2022
