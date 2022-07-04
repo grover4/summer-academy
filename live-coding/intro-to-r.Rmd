@@ -1,0 +1,17 @@
+---
+title: "My First Report in RMarkdown"
+author: "YOUR NAME"
+output: html_document
+---
+
+### Exercise 1
+
+Insert any text here.
+
+```{r code-chunk-label}
+# Insert code for Exercise 1 here
+```
+
+### Exercise 2
+
+...
