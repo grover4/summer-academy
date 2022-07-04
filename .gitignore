@@ -8,3 +8,11 @@ syllabus.Rmd
 syllabus.pdf
 syllabus.tex
 svm-latex-syllabus.tex
+slides/*.css
+slides/02-data-viz/d01-data-viz_cache/**
+slides/02-data-viz/d01-data-viz_files/**
+slides/02-data-viz/*.css
+slides/02-data-viz/libs/**
+pretest.Rmd
+pretest.html
+pretest.pdf
