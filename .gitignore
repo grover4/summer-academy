@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+tutorials/**
+_cache/**
+syllabus.Rmd
+syllabus.pdf
+syllabus.tex
+svm-latex-syllabus.tex
+slides/**
