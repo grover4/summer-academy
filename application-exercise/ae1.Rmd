@@ -1,6 +1,7 @@
 ---
 title: "Introduction to R"
 author: "YOUR Name"
+date: "`r Sys.Date()`"
 output: html_document
 ---
 
@@ -15,37 +16,47 @@ output: html_document
 **These questions are from Introduction to Data Science by Rafael Irizarry**
 
 1.  The formula for the sum of the squares of the first $n$ natural numbers is $$\frac{n  (n+1) (2n +1)}{6}.$$ 
-Use this to calculate the sum of the squares of the first 100 natural numbers by filling in the partial code given below.  (Don't forget to remove the comment hash `#` so the code is actually evaluated.)
+Use this to calculate the sum of the squares of the first 100 natural numbers by filling in the partial code given below. Then answer the question with inline code. 
 
-```{r problem1, echo=T, eval=T}
+(Don't forget to remove the comment hash `#` so the code is actually evaluated.)
+
+```{r problem1}
 
 #n<-
 #sum_sq_100<-
 
 ```
 
-2. Now use the same formula to calculate the sum of the first 1,000 positive integers. Create a code chunk, give it a name, set `echo=T` and `eval=T` and then type your code and run it.
+
+
+2. Look at the result of running the following code chunk. Based on the result, what do the functions `seq` and `sum` do?
+You can use `?seq` or `?sum` to get help but explain what the functions do in your own words.
+
+```{r problem 2}
+n <- 100
+x <- seq(1, n)
+sum(x)
+
+```
+
+
 
 3. Suppose a high school student asks for help solving a quadratic equation of the form $$ ax^2 + bx +c = 0. $$ The quadratic equation formula gives the solutions as 
 
 $$ \frac{1}{2a} (-b - \sqrt{ b^2 - 4 ac} ),\: \frac{1}{2a} (-b + \sqrt{ b^2 - 4 ac} ).$$ 
 
 
-  Calculate the solutions for the equation $x^2 + x -1 = 0$ by filling in the partial code given below.  (Don't forget to remove the comment hash `#` so the code is actually evaluated.)
+  Calculate the solutions for the equation $x^2 + x -1 = 0$ by filling in the partial code given below.  Then answer the question with inline code.
 
-```{r problem3, echo=T,eval=T}
+```{r give-me-a-label-please}
 
 #a <- 
 #b <- 
 #c <-
 #solution_1<-
-##solution_2 <-
+#solution_2 <-
 ```
 
 
-4. In math and programming, we say that we evaluate a function when we replace an argument with a given number. So if we type `sqrt(4)`, we are evaluating the square root function in R.  Use one line of code to compute the log, in base 10, of the square root of 125. (*Hint* use the help `?log` in the console window to get started.)
+4. In math and programming, we say that we evaluate a function when we replace an argument with a given number. So if we type `sqrt(4)`, we are evaluating the square root function in R.  Use one line of code to compute the log, in base 2, of the square root of 125. 
 
-```{r problem4, echo=T, eval=T}
-
-
-```
