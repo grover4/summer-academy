@@ -4,7 +4,7 @@ author: "YOUR NAME"
 output: html_document
 ---
 
-For this activity, we will practice making different visualizations for the `penguins` data set from the **palmerpenguins** package. Let's load the packages in our interactive environment by running the following code chunk.
+For this activity, we will practice making different visualizations for the `penguins` data set from the **palmerpenguins** package. Let's load the packages in our interactive environment by running the following code chunk in the Console.
 
 ```{r load-packages}
 library(ggplot2)                   #for making graphs
