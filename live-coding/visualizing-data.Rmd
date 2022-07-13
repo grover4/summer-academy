@@ -1,0 +1,36 @@
+---
+title: "Palmer Penguins"
+author: "YOUR NAME"
+output: html_document
+---
+
+For this activity, we will practice making different visualizations for the `penguins` data set from the **palmerpenguins** package. Let's load the packages in our interactive environment by running the following code chunk.
+
+```{r load-packages}
+library(ggplot2)                   #for making graphs
+library(palmerpenguins)            #for the data
+```
+
+Now that the packages are loaded, take a look at the data `penguins` to get a good feel for it. You can do this in one of two ways:
+  - Type `penguins` at the prompt in the Console. This will show you the first 10 rows of the data and as many columns as it can fit on the screen. 
+  - Type `View(penguins)` at the prompt in the Console to see the data in a spreadsheet type viewer. 
+
+Remember each row is called an observation. How many observations are in this data? 
+
+Who is the individual in this data set? That is, who/what is each observation about? 
+
+Remember, each column is called a variable. Each variable represents a characteristic of the individual. How many variables are in this data set? What are the variable names? 
+
+1.  Pick a single numerical variable and make a histogram of it. Select a reasonable binwidth for it.
+
+
+2.  Pick a numerical variable and a categorical variable and make a visualization that incorporates both of them. 
+
+3. Pick two numerical variables and a categorical variable and make a visualization that incorporates all of them.
+
+
+4.  Pick a single categorical variable from the data set and make a bar plot of its distribution.
+
+
+5.  Pick two categorical variables and make a segmented bar graph to visualize the relationship between the two variables. 
+
