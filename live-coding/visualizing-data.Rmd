@@ -23,7 +23,7 @@ Who is the individual in this data set? That is, who/what is each observation ab
 
 Remember, each column is called a variable. Each variable represents a characteristic of the individual. How many variables are in this data set? What are the variable names? 
 
-1.  Pick a single numerical variable and make a histogram of it. Select a reasonable binwidth for it.
+1.  Pick a single numerical variable and make a histogram of it. If the histogram looks too jagged, play with the binwidth.
 
 
 2.  Pick a numerical variable and a categorical variable and make a visualization that incorporates both of them. 
