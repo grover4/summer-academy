@@ -1,0 +1,47 @@
+---
+title: "Visualizing Starwars Characters"
+author: "YOUR Name"
+output: html_document
+---
+
+### Instructions
++ This homework is due on Monday July 18 by 11:59 pm. No late work is accepted unless prior arrangements have been made with the instructor.
++ Please answer ALL questions (including those that do not involve R) in the locations marked in this template. Remember to periodically **knit** your document to check that the output appears as you want it to; you will be turning in your knit html document. 
++ You will need to upload this document in CANVAS. Take a look at the material from Week 1: Hello World for instructions on exporting your files from JupyterHub and into CANVAS. 
++  Please answer the questions in the order in which they are posed. Write in complete sentences, and support your answers where asked. 
+
+
+
+For this homework, we will practice making different visualizations for the `starwars` data set from the **dplyr** package. Let's load the packages we need. 
+
+
+```{r load-packages, include=FALSE}
+library(ggplot2)    #for making graphs
+library(dplyr)  #for the data
+```
+
+Take a look at the `starwars` dataset like we did in class. 
+
+Then answer the questions below.
+
+1. How many observations are in this data frame? Who/what is the individual? Answer in complete sentences below. 
+
+
+2. Modify the following code to 
+        - change the color of all points to pink!
+        - add a title, subtitle, labels for x and y axis and also a caption indicating the source of the data.
+
+```{r scatterplot}
+ggplot(starwars, 
+       aes(x = height, y = mass)) + 
+  geom_point() 
+```
+
+
+3.  Pick a single numerical variable and make a histogram of it. If the histogram looks too jagged with the default binwidth, play around it to make it look smoother. 
+
+
+4.  Pick a numerical variable and a categorical variable and make a visualization (you pick the type!) of the relationship between the two variables. 
+
+5.  Make a segmented bar chart to visualize the relationship between `sex` and `gender`. 
+
