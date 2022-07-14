@@ -12,7 +12,9 @@ library(palmerpenguins)            #for the data
 ```
 
 Now that the packages are loaded, take a look at the data `penguins` to get a good feel for it. You can do this in one of two ways:
+
   - Type `penguins` at the prompt in the Console. This will show you the first 10 rows of the data and as many columns as it can fit on the screen. 
+
   - Type `View(penguins)` at the prompt in the Console to see the data in a spreadsheet type viewer. 
 
 Remember each row is called an observation. How many observations are in this data? 
