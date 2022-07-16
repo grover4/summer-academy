@@ -17,7 +17,7 @@ For this homework, we will practice making different visualizations for the `sta
 
 ```{r load-packages, include=FALSE}
 library(ggplot2)    #for making graphs
-library(dplyr)  #for the data
+library(dplyr)       #for the data
 ```
 
 Take a look at the `starwars` dataset like we did in class. 
@@ -37,11 +37,10 @@ ggplot(starwars,
   geom_point() 
 ```
 
+3.  Pick a single numerical variable and make a histogram of it. If the histogram looks too jagged with the default binwidth, play around it to make it look smoother. Don't forget those labels and titles!
 
-3.  Pick a single numerical variable and make a histogram of it. If the histogram looks too jagged with the default binwidth, play around it to make it look smoother. 
 
+4.  Pick a numerical variable and a categorical variable and make a visualization (you pick the type!) of the relationship between the two variables. Don't forget those labels and titles!
 
-4.  Pick a numerical variable and a categorical variable and make a visualization (you pick the type!) of the relationship between the two variables. 
-
-5.  Make a segmented bar chart to visualize the relationship between `sex` and `gender`. 
+5.  Make a segmented bar chart to visualize the relationship between `sex` and `gender`. Don't forget those labels and titles!
 
