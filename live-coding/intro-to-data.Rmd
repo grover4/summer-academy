@@ -1,0 +1,49 @@
+---
+title: "My first data wrangling verbs!"
+subtitle: "Select, filter, mutate, arrange" 
+author: "YOUR NAME"
+output: html_document
+---
+
+
+```{r load-packages, include = FALSE}
+library(tidyverse)            #umbrella package which includes                               dplyr and also ggplot!
+library(openintro)            #for the data
+```
+
+**Write code to answer the questions below. Then run it and answer the questions in complete sentences immediately below each code chunk.**
+
+### Exercise 1
+What does each row in the `arbuthnot` data frame describe? A year, a birth, London, Arbuthnot? No code needed. Write your answer in a complete sentence. 
+
+### Exercise 2
+ How many boys were baptized in the year 1685. 
+
+
+### Exercise 3 
+How often were more girls than boys baptized? 
+
+
+
+### Exercise 4
+Create and add a new variable `ratio` to `arbuthnot` which contains the ratio of boy baptisms to girl baptisms for each year. View the data to see which year had the largest boy:girl ratio.
+
+### Exercise 5
+Which year had the most boys being baptized? Use `arrange` and `desc` in a code chunk to find out.  
+
+
+### More Practice
+
+### Exercise 6
+What years are included in this data set? What are the dimensions of the data frame `present`? What are the variable (column) names?
+
+### Exercise 7
+Which years are included in the `present` data set? What are the dimensions of the data frame `present`? What are the variable (column) names?
+
+
+### Exercise 8
+How often were more boys than girls born?
+
+
+8. Create and add a new column called `total` which contains the total number of births in the year. Bonus: make a scatter plot of `total` on the $y$ axis versus `year` on the $x$ axis!
+
