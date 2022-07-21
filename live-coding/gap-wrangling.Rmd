@@ -15,7 +15,7 @@ library(gapminder)        #for data
 
 ### Warm Up
 
-To learn more about the data set, you can bring up the help file with `?gapminder`. Let's also load the data using `data` and take a look at it in the spreadsheet editor.
+To learn more about the data set, you can bring up the help file with `?gapminder`. Let's also load the data into the spreadsheet viewer using `View`.
 
 Take a look at the variable types  with the `glimpse` function.
 
