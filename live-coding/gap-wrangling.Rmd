@@ -1,0 +1,83 @@
+---
+title: "Gapminder - data manipulation"
+author: "YOUR NAME"
+output: html_document
+---
+
+Throughout this lesson and the next, we will use `gapminder` dataset which is available in an R package of the same name. The `gapminder` dataframe tracks demographic data in countries of the world over time. 
+
+Let's load the packages in our interactive environment by running the following code chunk in the Console.
+
+```{r load-pkg, include = FALSE}
+library(tidyverse)        #for data verbs/ggplot
+library(gapminder)        #for data
+```
+
+### Warm Up
+
+To learn more about the data set, you can bring up the help file with `?gapminder`. Let's also load the data using `data` and take a look at it in the spreadsheet editor.
+
+Take a look at the variable types  with the `glimpse` function.
+
+## Exercises
+
+
+### Exercise 1.
+
+Use `filter` to extract the data for Canada and then select the variables country, continent, year, and lifeExp.
+
+
+```{r exercise1}
+
+
+```
+
+### Exercise 2.
+
+Which countries had a life expectancy below 50 years of age in 2007? Count the number of countries.
+
+```{r exercise2}
+
+
+```
+
+### Exercise 3.
+
+Which country had the higher life expectancy in 1977: Ireland or Brazil? 
+
+```{r ex3}
+
+
+```
+
+
+### Exercise 4.
+
+Does the result of the following code surprise you? How do the select helpers deal with case by default? Type `?contains` in the Console to see how to override the default and then try it.
+
+```{r ex4}
+
+gapminder %>% select( contains("POP") )
+
+```
+
+
+### Exercise 5.
+
+Sort the countries by life expectancy (in descending order) to find the ones with the highest life expectancy.  Use the function `slice_head` from at the end of the pipeline to just print the first five rows.  
+
+
+### Exercise 6.
+
+Create a new variable called `gdp` which recovers each country's GDP by multiplying the population and GDP per capita. What do you notice about where the new variable is located?
+
+
+## Exercise 7.
+
+How many unique countries does the data set contain? (note: distinct drops the other variables by default)
+
+## Exercise 8.
+
+How many unique countries are in Asia? 
+
+
