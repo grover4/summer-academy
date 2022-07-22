@@ -32,4 +32,4 @@ library(gapminder)       #for the data
 ### Exercise 3: Create a new variable `log_pop` which is the natural logarithm of the population variable. Be sure to add the new variable to the `gapminder` data frame.
 
 
-### Exercise 4: Pick a country (your choice) and make a scatter plot of `log_pop` versus year for that country. 
+### Exercise 4: Pick a country (yes, your choice) and make a scatter plot of `log_pop` versus year for that country. 
