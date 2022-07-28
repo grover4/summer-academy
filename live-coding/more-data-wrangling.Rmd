@@ -1,0 +1,51 @@
+---
+title: "What will you major in?"
+subtitle: "Select, filter, mutate oh my"
+author: "YOUR NAME"
+output: html_document
+---
+
+```{r load-packages, include = FALSE}
+library(tidyverse)            #umbrella package which includes                               dplyr and also ggplot!
+library(fivethirtyeight)      #for the data
+```
+
+
+### Warm Up
+
+Spend a few minutes learning about the data `college_recent_grads` from the **fivethirtyeight** package.
+
+
+### Exercise 1
+What does each row in the dataset describe?  A major? A major category?
+
+### Exercise 2
+ What are the majors with the lowest unemployment rates? Write code to show the name of the major and also the unemployment rate for the 10 majors with the lowest unemployment rates.
+ 
+### Exercise 3
+ Create and add a new variable called `underempl_rate` to the dataset which shows the underemployment rate for each major. What are the majors with the lowest `underempl_rate`? Write code to show the name of the major and also the underemployment rate for the 10 majors with the lowest unemployment rates.  
+
+### Exercise 4 
+What are the top ten majors with the highest `sharewomen`? Please follow instructions in previous exercises.
+
+### Exercise 5
+Which is the most popular major in this data set? Follow instructions in the previous exercises  and list the top 10 most common majors in this data.
+
+### Exercise 6
+Pick a `major_category` that interests you and rank the majors *within* that category  in descending order of `median` income. For ease of viewing, please only show the `major` and `median` columns in your output.
+
+### Exercise 7
+Make a faceted histogram to compare the `median` income by `major_category`. Play around with the number of rows, columns and also the binwidth so you are able to view all the facets properly.
+
+
+### Exercise 8 
+Which major category has the highest `avg_income`?  *Hint* pipe the data frame created in the code chunk to `arrange` and sort on `avg_income`.
+
+```{r exercise8, eval = FALSE}
+
+college_recent_grads %>% 
+  group_by(major_category) %>%
+  summarize( avg_income = mean(median) )
+
+
+```
