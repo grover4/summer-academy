@@ -1,0 +1,54 @@
+---
+title: "Airbnb listings in Edinburgh"
+author: "YOUR Name"
+output: html_document
+---
+
+### Instructions
++ This homework is due on Friday Aug 5 by 11:59 pm. No late work is accepted unless prior arrangements have been made with the instructor.
++ Please answer ALL questions (including those that do not involve R) in the locations marked in this template. Remember to periodically **knit** your document to check that the output appears as you want it to; you will be turning in your knit html document. 
++ You will need to upload this document in CANVAS. Take a look at the material from Week 1: Hello World for instructions on exporting your files from JupyterHub and into CANVAS. 
++  Please answer the questions in the order in which they are posed. Write in complete sentences, and support your answers where asked. 
+
+
+
+For this homework, we will explore the airbnb listings in Edinburgh, Scotland. The data set is called `edibnb` and is in the package **dsbox**. In addition, we will be using the **tidyverse** suite of packages for plotting and data wrangling and also the **ggridges** package to make density ridge plots.
+
+Let's load the packages we will need.
+
+```{r load-packages, include=FALSE}
+library(tidyverse)                 #umbrella package 
+library(dsbox)                     #for the data
+library(ggridges)                  #for cool density ridge plots
+```
+
+**Warm up** View the data in your spreadsheet viewer and also learn about the data by checking out the associated help pages.
+
+## Exercises
+
+1. What does each row in the data set represent? Write a sentence with the answer.   (Hint: think carefully about WHAT/WHO is being described and clearly state it)
+
+2. How many unique neighborhoods are in this data set? Write code and also answer in a sentence. 
+
+You may have noticed from exercise 2 that some rows are missing the name of  neighborhood and instead are listed as `NA` which is R for missing value. Let's go ahead and remove these rows before continuing with the remaining analyses.
+
+The function `is.na()` takes as its argument the variable you want checked for missing values. For example `is.na(neighbourhood)` identifies the rows where the neighbourhood is missing. 
+  
+3. Fill in the blank and then run the code chunk below to only keep the listings where the neighbourhood is mentioned. Don't forget to delete `eval = FALSE` when you are done.
+
+```{r remove-na, eval = FALSE}
+edibnb <- edibnb %>% 
+              ___(!is.na(neighbourhood) )   
+
+```
+
+
+4. Create a density ridge plot comparing Airbnb prices across neighbourhoods. Describe (in your OWN words) the shape of the distributions: is it symmetric, skewed to the right,skewed to the left, bi-modal?  (Don't forget labels, titles)
+
+
+5. Based on the shape of the price distribution, should you report the mean or median price as a typical price for the neighbourhood? Make a choice and then go ahead and calculate it for each neighbourhood using `group_by` and `summarise`. Be sure to also calculate the standard deviation if reporting the mean or the IQR if reporting the median. 
+
+
+
+6. Create a boxplot to compare the distribution of review scores (`review_scores_rating`) across the neighbourhoods. Do the reviews tend to be positive or negative? (Don't forget labels, titles)
+ 
