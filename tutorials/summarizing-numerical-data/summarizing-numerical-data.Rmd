@@ -18,7 +18,6 @@ library(gapminder)
 
 library(learnr)
 library(ggridges)
-library(gradethis)
 
 knitr::opts_chunk$set(warning = FALSE,
                       message = FALSE,
@@ -69,14 +68,11 @@ We will discuss each of these in turn in this tutorial. We will be using data wr
 
 ```
 
-```{r load-packages-tidy-solution}
+```{r load-packages-tidy-hint}
 library(tidyverse)
 library(ggridges)
 ```
 
-```{r load-packages-tidy-check}
-grade_this_code("You've successfully loaded the packages.")
-```
 
 ## Data
 
@@ -95,7 +91,7 @@ We are going to first focus on the life expectancy in the state of Washington wh
 
 ```
 
-```{r life-wa-solution}
+```{r life-wa-hint}
 
 life_wa <- life %>%
   filter(state == "Washington") 
@@ -132,7 +128,7 @@ Let's take a closer look at the life expectancies for counties in Washington. Ma
 
 ```
 
-```{r life-wa-view2-solution}
+```{r life-wa-view2-hint}
 ggplot(data = life_wa,
        mapping = aes( x = expectancy)) +
   geom_histogram( binwidth = 0.75, alpha = 0.5)
@@ -406,7 +402,7 @@ Use `filter` to isolate counties in WA state with life expectancy in the range 7
 
 ```
 
-```{r one-sd-mean-solution}
+```{r one-sd-mean-hint}
 
 life_wa %>% 
   filter(expectancy >= 78.96 - 1.17, 
@@ -642,7 +638,7 @@ We saw some extreme values when we created the density ridge plot of income. Wha
 ```
 
 
-```{r box-income-solution}
+```{r box-income-hint}
 
 ggplot(life, aes(x = income, y = region)) +
   geom_boxplot() 
@@ -673,7 +669,7 @@ Create the overlaid density plots your created earlier, but for the natural loga
 
 ```
 
-```{r inc2-solution}
+```{r inc2-hint}
 
 ggplot(data = life,
        mapping = aes(x = log(income), fill = coast))+
@@ -695,13 +691,11 @@ Let's return to the `gapminder` data from the package of the same name.  Go ahea
 
 ```
 
-```{r load-packages-solution}
+```{r load-packages-hint}
 library(gapminder)
 ```
 
-```{r load-packages-check}
-grade_this_code("You've successfully loaded the packages.")
-```
+
 
 
 Take a peek at the dataframe in the code chunk below.
@@ -764,7 +758,7 @@ ggplot(data = ___,
 ```
 
 
-```{r gap-2007-solution}
+```{r gap-2007-hint}
 
 gap2007 <- gapminder %>% filter(year == 2007)
 
@@ -810,7 +804,7 @@ gap2007 %>% filter(continent == "Asia") %>%
 
 ```
 
-```{r ex3-solution}
+```{r ex3-hint}
 gap2007 %>% filter(continent == "Asia") %>% 
        summarise(median_exp = median(lifeExp), 
                  iqr = IQR(lifeExp) )
