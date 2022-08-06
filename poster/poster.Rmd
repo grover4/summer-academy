@@ -58,8 +58,8 @@ You can include regular markdown text and R `code chunks`. To show the code in t
 
 ### {data-width=50}
 
-Write any final conclusions here
+Write any final conclusions/thoughts here about what you have learned. You can also talk about limitations of your methods, future work you are interested in doing with the data.
 
 ### {data-width=50 .small}
 
-Use this space to acknowledge any sources you consulted for your poster. Also thank people who helped you with the process.
+Use this space to acknowledge any sources/references you consulted for your poster. Also thank people who helped you with the process.
