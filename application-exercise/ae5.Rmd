@@ -1,0 +1,49 @@
+---
+title: "Spam Filter"
+author: "YOUR Name"
+output: html_document
+---
+
+### Instructions
++ This homework is due on Tuesday 8/9 by 11:59 pm. No late work is accepted unless prior arrangements have been made with the instructor.
++ Please answer ALL questions (including those that do not involve R) in the locations marked in this template. Remember to periodically **knit** your document to check that the output appears as you want it to; you will be turning in your knit html document. 
++ You will need to upload this document in CANVAS. Take a look at the material from Week 1: Hello World for instructions on exporting your files from JupyterHub and into CANVAS. 
++  Please answer the questions in the order in which they are posed. Write in complete sentences, and support your answers where asked. 
+
+
+
+For this homework, you will get a chance to put to use what you know about exploratory data analysis in exploring a new dataset where the primary variable of interest is categorical. The data set is called `email` and is in the package **openintro**. In addition, we will be using the **tidyverse** suite of packages for plotting and data wrangling.
+
+Let's load the packages we will need.
+
+```{r load-packages, include=FALSE}
+library(tidyverse)                 #umbrella package 
+library(openintro)                 #for the data
+library(janitor)                   # to make tables
+library(ggridges)                  # for density ridge plots
+```
+
+**Warm up** View the data in your spreadsheet viewer and also learn about the data by checking out the associated help pages.
+
+Of primary interest is the first column, a categorical variable indicating whether or not the email is spam. A value of “1” indicates the email is spam. This was created by actually reading through each email individually and deciding if it looked like spam or not. It’s important that you have a full sense of what each of the variables mean, so you’ll want to start your exercises by reading about them in the data set description.
+
+One of your guiding questions throughout is: what characteristics of an email are associated with it being spam? 
+
+## Exercises
+
+1. What does each row in the data set represent? Write a sentence with the answer.   (Hint: think carefully about WHAT/WHO is being described and clearly state it)
+
+Let’s start with examining if there is an association between spam and the length of an email? You could imagine a story either way:
+
+Spam is more likely to be a short message tempting me to click on a link, or
+My normal email is likely shorter since I exchange brief emails with my friends all the time.
+Here, you’ll use the email dataset to settle that question.
+
+
+2. Construct density ridge plots to compare the `num_char` between messages that are spam and those that are not. Be sure to label axes, give a title. Are spam messages longer or shorter?
+
+3. Create a segmented bar chart to visualize the relationship between `number` and `spam`. Do spam messages tend to have numbers? Or is it the other way around? (THINK about which variable should be on the x axis. Don't forget those labels and titles!) 
+
+
+4. Create a contingency table summarizing the relationship between `number` and `spam`. Also create a mosaic plot to visualize the association. Then write a couple of sentences describing how the two variables are related. Be sure to mention the %’s of spam we should see if the variables are unrelated in your write up as well as how the data is deviating from these expectations.
+
