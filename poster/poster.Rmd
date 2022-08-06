@@ -1,0 +1,65 @@
+---
+title: "**Short title:** Flexdashboard poster template"
+output: 
+  postr::flex_dashboard_poster:
+    render_print: true
+---
+
+```{r load-packages, include = FALSE}
+#load any packages you need to use here
+
+```
+
+## Header row {data-height=15}
+
+###
+
+<table style="width:100%">
+<tr>
+  <td><center><h3>
+  **Poster title: Write a full title for your poster**
+  </h3></center></td>
+</tr>
+<tr><td><center>
+  **Author: Write your full name here**
+  </center></td>
+</tr>
+</table> 
+
+<hr>
+
+**Abstract** Write a high level summary here of your analysis - the main take-aways.   
+
+
+## Body row {data-height=75}
+
+### **Column 1 title**
+
+This section defines the first column of the body row of the poster. State your research questions here. You can also provide a glimpse of the data to orient the reader.
+
+
+
+
+### **Column 2 title**
+
+Content for the second column. It's a good idea to have a visually appealing plot here.
+
+
+
+### **Column 3 title**
+
+You can include regular markdown text and R `code chunks`. To show the code in the chunks you have to ask for it with `echo=TRUE`.
+
+
+
+
+
+## Footer row {data-height=10} 
+
+### {data-width=50}
+
+Write any final conclusions here
+
+### {data-width=50 .small}
+
+Use this space to acknowledge any sources you consulted for your poster. Also thank people who helped you with the process.
